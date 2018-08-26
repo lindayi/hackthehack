@@ -125,7 +125,7 @@ var myChart = echarts.init(document.getElementById('bar-chart-3'));
         },
         grid: {
             show: false,
-            left: "44%",
+            left: "25%",
             right: "-5%",
         },
         xAxis: {
@@ -159,13 +159,29 @@ var myChart = echarts.init(document.getElementById('bar-chart-3'));
             },
             inverse: true,
             type: 'category',
-            data: [{value: 'Tim Lytle', itemStyle: {color: '#000'},}, 'Joe Nash', 'Minerva Tantoco', 'Gregor Engelmann', 'Remko de Knikker', 'Tim Tregubov', 'Tim Fogarty', 'Sam Machin', 'Ryan Hill', 'Pierre Gauthier'],
+            data: ['App', 'Game', 'Data', 'Web', 'Platform', 'Simple', 'Social', 'Learning', 'Students', 'Mobile'],
         },
         series: [{
-            data: [10, 9, 8, 8, 7, 6, 6, 6, 6, 6],
+            data: [6805, 4343, 2756, 2197, 1969, 1796, 1520, 1451, 1429, 1421],
             type: 'bar',
         }],
     };
+/*app: 6805
+game: 4343
+data: 2756
+web: 2197
+platform: 1969
+simple: 1796
+social: 1520
+learning: 1451
+students: 1429
+mobile: 1421*/
+
+//data: [{value: 'Tim Lytle', itemStyle: {color: '#000'},}, 'Joe Nash', 'Minerva Tantoco', 'Gregor Engelmann', 'Remko de Knikker', 'Tim Tregubov', 'Tim Fogarty', 'Sam Machin', 'Ryan Hill', 'Pierre Gauthier'],
+//        },
+//        series: [{
+//            data: [10, 9, 8, 8, 7, 6, 6, 6, 6, 6],
+//            type: 'bar',
 
         // use configuration item and data specified to show chart
 myChart.setOption(option);
