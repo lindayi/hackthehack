@@ -109,33 +109,40 @@
            <div class="container pulldown">					
 					<div class="row mockup-container">
 						<div class="col-lg-4">
-							<div class="single-feature">
-								<h4 class="visual-stat">Most used tools</h4>
-								<div id="bar-chart-1" class="gchart-home"></div>
-							</div>
+                            <div class="single-feature">
+                                <div class="stat-single-num fz-36">
+                                <h3>Neural network performance</h3>
+                                </div>
+                                <div class="stat-single-num fz-36">
+                                    <h4>Precision</h4>
+                                    <p>0.92</p>
+                                </div>
+                                <div class="stat-single-num fz-36">
+                                    <h4>Accuracy</h4>
+                                    <p>0.71</p>
+                                </div>
+                                <div class="stat-single-num fz-36">
+                                    <h4>Recall</h4>
+                                    <p>0.72</p>
+                                </div>
+                                <div class="stat-single-num fz-36">
+                                    <h4><abbr title="area under the curve">AUC</abbr></h4>
+                                    <p>0.68</p>
+                                </div>
+                            </div>
 						</div>
-                        <div class="col-lg-8">
-                            <div class="col-lg-6">
+						<div class="col-lg-4">
 							<div class="single-feature">
 								<h4 class="visual-stat">Top tools for winning projects</h4>
 								<div id="bar-chart-2" class="gchart-home"></div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
+							</div>
+						</div>
+						<div class="col-lg-4">
 							<div class="single-feature">
 								<h4 class="visual-stat">Top project keywords</h4>
 								<div id="bar-chart-3" class="gchart-home"></div>
 							</div>
-						  </div>
-                            <div class="col-lg-12">
-                            <div class="single-feature">
-                                <h4 class="visual-stat">Most used tools</h4>
-								<div id="bar-chart-4" class="gchart-home"></div>
-                            </div>
-                            </div>
-                        </div>
-						
-																		
+						</div>												
 					</div>
 				</div>
         </section>
