@@ -84,7 +84,7 @@
 					<div id="custom-search-input">
 						<div class="input-group col-md-12">
 							<input id="main-search-box" type="text" class="form-control input-lg" placeholder="Search for hackathons" />
-							<a id="main-search-button" class="search-icon" href="search.html"></a>
+							<a id="main-search-button" class="search-icon" href="search.php"></a>
 						</div>
 					</div>
 				</div>
