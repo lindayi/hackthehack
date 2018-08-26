@@ -1,7 +1,7 @@
 <?php
     include('config.php');
     $query = $_GET["query"];
-    $sql = "SELECT * FROM hackathon WHERE lower(title) like '%".$query."%' ORDER BY date(start_date) DESC LIMIT 0, 100;";
+    $sql = "SELECT * FROM hackathon WHERE lower(title) like '%".$query."%' ORDER BY date(start_date) DESC LIMIT 0, 10;";
     $result = $conn->query($sql);
     $result_count = $result->num_rows;
 ?>
@@ -79,7 +79,7 @@
 					<div class="row fullscreen d-flex align-items-center justify-content-center">
 						<div class="banner-content col-lg-8">
 							<h1 class="text-white">
-								<?php echo $result_count;?> Hackathons found	
+								<?php echo $result_count; if ($result_count == 10) {echo "+";}?> Hackathons found	
 							</h1>
                             
                             <!-- Search bar -->
