@@ -27,13 +27,15 @@
         <title>Search for <?php echo $query;?> - Powered by Hack the Hack</title>
         
         <!-- More Meta Tags -->
-        <meta property="og:title" content="Hack the Hack">
+        <meta property="og:title" content="Hack the Hack: Search">
         <meta property="og:type" content="website">
-        <meta property="og:description" content="Find out what kind of projects win hackathons hosted by Major League Hacking">
-        <meta property="og:image" content="http://dav-idcox.com/bikespace/icons/media_thumb1.jpg">
-        <meta property="og:url" content="http://dav-idcox.com">
+        <meta property="og:description" content="Discover what makes a winning hackathon project.">
+        <meta property="og:image" content="img/hth-icon-512.png">
+        <meta property="og:url" content="https://lindayi.me/projects/hack-the-hack">
         <meta name="twitter:card" content="summary_large_image">
         <meta property="og:site_name" content="Hack the Hack">
+        <meta property="og:image:width" content="512">
+        <meta property="og:image:height" content="512">
         <meta name="twitter:image:alt" content="Hack the Hack logo">
         
         
@@ -57,13 +59,13 @@
 			 <div class="container">
 			     <div class="row align-items-center justify-content-between d-flex">
                      <div id="logo">
-                         <a href="index.html"><img src="img/hack-logo-2.png" alt="" title="" /></a>
+                         <a href="index.php"><img src="img/hack-logo-2.png" alt="Hack the Hack logo" title="" /></a>
                      </div>
                      <nav id="nav-menu-container">
                          <ul class="nav-menu">
-                             <li class="menu-active"><a href="index.html">Home</a></li>
-                             <li><a href="index.html#stats">Stats</a></li>
-                             <li><a href="search.html">Hackathons</a></li>
+                             <li class="menu-active"><a href="index.php">Home</a></li>
+                             <li><a href="index.php#stats">Stats</a></li>
+                             <li><a href="search.php">Hackathons</a></li>
                          </ul>
                      </nav>
                      <!-- #nav-menu-container -->
@@ -200,7 +202,6 @@
             <!--Other script files - including bootstrap-->
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 			<script src="js/vendor/bootstrap.min.js"></script>			
-			<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
   			<script src="js/easing.min.js"></script>			
 			<script src="js/hoverIntent.js"></script>
 			<script src="js/superfish.min.js"></script>	

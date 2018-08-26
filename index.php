@@ -26,6 +26,8 @@
         <meta property="og:url" content="https://lindayi.me/projects/hack-the-hack">
         <meta name="twitter:card" content="summary_large_image">
         <meta property="og:site_name" content="Hack the Hack">
+        <meta property="og:image:width" content="512">
+        <meta property="og:image:height" content="512">
         <meta name="twitter:image:alt" content="Hack the Hack logo">
         
         
@@ -49,7 +51,7 @@
 			 <div class="container">
 			     <div id="home" class="row align-items-center justify-content-between d-flex">
                      <div id="logo">
-                         <a href="index.php"><img src="img/hack-logo-2.png" alt="" title="" /></a>
+                         <a href="index.php"><img src="img/hack-logo-2.png" alt="Hack the Hack logo" title="" /></a>
                      </div>
                      <nav id="nav-menu-container">
                          <ul class="nav-menu">

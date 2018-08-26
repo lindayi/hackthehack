@@ -8,7 +8,7 @@
 		<!-- Favicon-->
 		<link rel="shortcut icon" href="img/hth-red-favicon.png">
 		<!-- Author Meta -->
-		<meta name="author" content="david-dayi">
+		<meta name="author" content="david & dayi">
 		<!-- Meta Description -->
 		<meta name="description" content="">
 		<!-- Meta Keyword -->
@@ -19,13 +19,15 @@
         <title>Hack the Hack</title>
         
         <!-- More Meta Tags -->
-        <meta property="og:title" content="Hack the Hack">
+        <meta property="og:title" content="Hack the Hack: Stats">
         <meta property="og:type" content="website">
-        <meta property="og:description" content="Find out what kind of projects win hackathons hosted by Major League Hacking">
-        <meta property="og:image" content="http://dav-idcox.com/bikespace/icons/media_thumb1.jpg">
-        <meta property="og:url" content="http://dav-idcox.com">
+        <meta property="og:description" content="Discover what makes a winning hackathon project.">
+        <meta property="og:image" content="img/hth-icon-512.png">
+        <meta property="og:url" content="https://lindayi.me/projects/hack-the-hack">
         <meta name="twitter:card" content="summary_large_image">
         <meta property="og:site_name" content="Hack the Hack">
+        <meta property="og:image:width" content="512">
+        <meta property="og:image:height" content="512">
         <meta name="twitter:image:alt" content="Hack the Hack logo">
         
         
@@ -45,20 +47,19 @@
     
     <body>
         
-        <header id="header" id="home">
+        <header id="header">
 			 <div class="container">
-			     <div class="row align-items-center justify-content-between d-flex">
+			     <div id="home" class="row align-items-center justify-content-between d-flex">
                      <div id="logo">
-                         <a href="index.html"><img src="img/hack-logo-2.png" alt="" title="" /></a>
+                         <a href="index.php"><img src="img/hack-logo-2.png" alt="Hack the Hack logo" title="" /></a>
                      </div>
                      <nav id="nav-menu-container">
                          <ul class="nav-menu">
-                             <li class="menu-active"><a href="index.html">Home</a></li>
-                             <li><a href="index.html#stats">Stats</a></li>
-                             <li><a href="search.html">Hackathons</a></li>
+                             <li class="menu-active"><a href="index.php">Home</a></li>
+                             <li><a href="#stats">Stats</a></li>
+                             <li><a href="search.php">Hackathons</a></li>
                          </ul>
-                     </nav>
-                     <!-- #nav-menu-container -->
+                     </nav><!-- #nav-menu-container -->
                  </div>
             </div>
         </header>
@@ -66,25 +67,30 @@
         
         <!-- start banner Area -->
 			<section class="banner-area relative">
-				<div class="overlay overlay-bg sch"></div>	
+				<div class="overlay overlay-bg hth"></div>	
 				<div class="container">
 					<div class="row fullscreen d-flex align-items-center justify-content-center">
 						<div class="banner-content col-lg-8">
 							<h1 class="text-white">
-								Search results			
+								Hack the Hack			
 							</h1>
+							<p class="pt-20 pb-0 fz-24 text-white">
+                                Discover what makes a winning hackathon project.</p>
+                            <p class="pt-0 pb-10 fz-18 text-white">Mining <span class="bold-num">97,933</span> Devpost submissions and counting...
+							</p>
                             
-                            <!-- Search bar -->
-                            <div class="row d-flex justify-content-center">
-                                <div class="col-md-12">
-                                    <div id="custom-search-input">
-                                        <div class="input-group col-md-12">
-                                            <input id="main-search-box" type="text" class="form-control input-lg" placeholder="Search for hackathons" value="hack the 6ix" />
-                                            <a id="main-search-button" class="search-icon" href="hack-the-6ix.html"></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                      <!-- Search bar -->      
+			<div class="row d-flex justify-content-center">
+				
+				<div class="col-md-12">
+					<div id="custom-search-input">
+						<div class="input-group col-md-12">
+							<input id="main-search-box" type="text" class="form-control input-lg" placeholder="Search for hackathons" />
+							<a id="main-search-button" class="search-icon" href="search.php"></a>
+						</div>
+					</div>
+				</div>
+			</div>
                             <!-- End search bar -->	
                             
 						</div>											
@@ -97,90 +103,27 @@
 
 	   <section class="feature-area pb-100" id="stats">
            
-                <div class="container pullup-2">					
-					<div class="row mockup-container d-flex justify-content-center">
-                        
-                        <!--Centre column-->
-                            
-							<!--Centre column-->
-						<div class="col-lg-8 col-md-8 col-sm-12">
-                            
-                            <p class="pt-0 pl-20 fz-24 text-white">
-								Hackathons on Devpost:
-							</p>
-                            
-                            <!--Search result-->
-							<a href="hack-the-6ix.html">
-                            <div class="search-result single-feature">
-                                <div class="row project-holder">
-                                    <div class="col-lg-6 col-md-6 col-sm-6">
-                                        <h3 class="hackathon-name h2">Hack the 6ix</h3>
-                                    </div>
-                                    <div class="col-lg-3 col-med-3 col-sm-3">
-                                        <div class="hackathon-num-project fz-36">
-                                            <h4><abbr title="number">#</abbr> of projects</h4>
-                                            <p>37</p>
-                                        </div>
-                                    </div>
-								    <div class="col-lg-3 col-med-3 col-sm-3">
-                                        <div class="hackathon-num-winner fz-36">
-                                            <h4><abbr title="number">#</abbr> of winners</h4>
-                                            <p>4</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-							</a>
-                            <!--End Search Result-->
-                            
-                            <!--Search result-->
-							<a href="hack-the-6ix.html">
-                            <div class="search-result single-feature">
-                                <div class="row project-holder">
-                                    <div class="col-lg-6 col-md-6 col-sm-6">
-                                        <h3 class="hackathon-name h2">Hack the 6ix</h3>
-                                    </div>
-                                    <div class="col-lg-3 col-med-3 col-sm-3">
-                                        <div class="hackathon-num-project fz-36">
-                                            <h4><abbr title="number">#</abbr> of projects</h4>
-                                            <p>37</p>
-                                        </div>
-                                    </div>
-								    <div class="col-lg-3 col-med-3 col-sm-3">
-                                        <div class="hackathon-num-winner fz-36">
-                                            <h4><abbr title="number">#</abbr> of winners</h4>
-                                            <p>4</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-							</a>
-                            <!--End Search Result-->
-                            <!--Search result-->
-							<a href="hack-the-6ix.html">
-                            <div class="search-result single-feature">
-                                <div class="row project-holder">
-                                    <div class="col-lg-6 col-md-6 col-sm-6">
-                                        <h3 class="hackathon-name h2">Hack the 6ix</h3>
-                                    </div>
-                                    <div class="col-lg-3 col-med-3 col-sm-3">
-                                        <div class="hackathon-num-project fz-36">
-                                            <h4><abbr title="number">#</abbr> of projects</h4>
-                                            <p>37</p>
-                                        </div>
-                                    </div>
-								    <div class="col-lg-3 col-med-3 col-sm-3">
-                                        <div class="hackathon-num-winner fz-36">
-                                            <h4><abbr title="number">#</abbr> of winners</h4>
-                                            <p>4</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-							</a>
-                            <!--End Search Result-->
-                            
-                        </div>					
+           
+           <div class="container pulldown">					
+					<div class="row mockup-container">
+						<div class="col-lg-4">
+							<div class="single-feature">
+								<h4 class="visual-stat">Most used tools</h4>
+								<div id="bar-chart-1" class="gchart-home"></div>
+							</div>
+						</div>
+						<div class="col-lg-4">
+							<div class="single-feature">
+								<h4 class="visual-stat">Top tools for winning projects</h4>
+								<div id="bar-chart-2" class="gchart-home"></div>
+							</div>
+						</div>
+						<div class="col-lg-4">
+							<div class="single-feature">
+								<h4 class="visual-stat">Top project keywords</h4>
+								<div id="bar-chart-3" class="gchart-home"></div>
+							</div>
+						</div>												
 					</div>
 				</div>
         </section>
@@ -215,8 +158,7 @@
         
             <!--Other script files - including bootstrap-->
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-			<script src="js/vendor/bootstrap.min.js"></script>			
-			<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+			<script src="js/vendor/bootstrap.min.js"></script>
   			<script src="js/easing.min.js"></script>			
 			<script src="js/hoverIntent.js"></script>
 			<script src="js/superfish.min.js"></script>	
