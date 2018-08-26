@@ -121,13 +121,16 @@
                                 Hackathons on Devpost:
                             </p>';
         while($row = $result->fetch_assoc()) {
+            $start_date = date_create($row["start_date"]);
+            $end_date = date_create($row["end_date"]);
             echo '
                             <!--Search result-->
-							<a href="https://'.$row["hackathon_alias"].'.devpost.com/">
+							<a href="hackathon_detail.php?alias='.$row["hackathon_alias"].'">
                             <div class="search-result single-feature">
                                 <div class="row project-holder">
                                     <div class="col-lg-6 col-md-6 col-sm-6">
                                         <h3 class="hackathon-name h2">'.$row["title"].'</h3>
+                                        <p>'.$start_date->format('F jS Y g:ia').' — '.$end_date->format('F jS Y g:ia').'</p>
                                     </div>
                                     <div class="col-lg-3 col-med-3 col-sm-3">
                                         <div class="hackathon-num-project fz-36">
