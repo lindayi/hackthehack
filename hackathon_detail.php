@@ -160,7 +160,7 @@
                                         foreach ($hack_judge as $judge) {
                                             $name = key($judge);
                                             $affi = $judge[$name];
-                                            echo '<li><p class="judge-name h5 pb-10 pt-20">'.$name.'</p><p class="judge-affiliation pb-0">'.$affi.'</p></li>\n';
+                                            echo '<li><p class="judge-name h5 pb-10 pt-20">'.$name.'</p><p class="judge-affiliation pb-0">'.$affi.'</p></li>';
                                         }
                                     ?>
                                 </ul>
