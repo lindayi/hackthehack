@@ -126,11 +126,11 @@
             $sql = "SELECT count(1) as pnum FROM project WHERE hackathon_alias = '".$row["hackathon_alias"]."';";
             $pnumresult = $conn->query($sql);
             $pnumrow = $pnumresult->fetch_assoc();
-            $pnum = $pnumrow["pnum"]
+            $pnum = $pnumrow["pnum"];
             $sql = "SELECT count(1) as wnum FROM project WHERE winner = 1 AND hackathon_alias = '".$row["hackathon_alias"]."';";
             $wnumresult = $conn->query($sql);
             $wnumrow = $wnumresult->fetch_assoc();
-            $wnum = $wnumrow["wnum"]
+            $wnum = $wnumrow["wnum"];
 
             echo '
                             <!--Search result-->
