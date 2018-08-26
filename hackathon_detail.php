@@ -7,6 +7,7 @@
         $row = $result->fetch_assoc();
         $hack_title = $row["title"];
         $hack_judge = $row["judges"];
+        $hack_judge = json_decode($hack_judge, true);
         $start_date = date_create($row["start_date"]);
         $end_date = date_create($row["end_date"]);
     } else {
@@ -155,6 +156,13 @@
 									Judges
 								</h3>
                                 <ul>
+                                    <?php
+                                        foreach ($test as $judge) {
+                                            $name = key($judge);
+                                            $affi = $judge[$name];
+                                            echo '<li><p class="judge-name h5 pb-10 pt-20">'.$name.'</p><p class="judge-affiliation pb-0">'.$affi.'</p></li>';
+                                        }
+                                    ?>
                                     <li>
                                         <p class="judge-name h5 pb-10 pt-20">Jacob Lee</p>
                                         <p class="judge-affiliation pb-0">Stdlib - Co-Founder</p>
