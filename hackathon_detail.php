@@ -107,44 +107,37 @@
                             <p class="pt-0 pl-20 fz-24 text-white">
 								Projects at this hackathon:
 							</p>
-                            <!--Project-->
-							<div class="single-feature">
+<?php
+
+    $sql = "SELECT * FROM project WHERE hackathon_alias = '".$alias."'";
+    $result = $conn->query($sql);
+    if ($result->num_rows > 0) {
+        while($row = $result->fetch_assoc()) {
+                    echo   '<!--Project-->
+                            <div class="single-feature">
                                 <div class="row project-holder">
                                     <div class="col-lg-8 col-md-8 col-sm-6">
-                                        <h3 class="project-name h2">AllTheFeels</h3>
-                                        <p class="project-tagline">Alexa custom skill - Curates list of playlists depending on how the user's mood for that day is</p>
+                                        <h3 class="project-name h2">'.$row["title"].'</h3>
+                                        <p class="project-tagline">'.$row["tagline"].'</p>
                                     </div>
                                     <div class="col-lg-2 col-med-2 col-sm-3">
                                         <div class="project-percentage fz-36">
-                                            <p>67%</p>
+                                            <p>'.number_format($row["predict"] * 100).'%</p>
                                         </div>
-                                    </div>
-								    <div class="col-lg-2 col-med-2 col-sm-3">
+                                    </div>';
+                    if ($row["winner"] == 1) {
+                        echo '<div class="col-lg-2 col-med-2 col-sm-3">
                                         <img class="trophy" alt="winning project" src="img/trophy.png"/>
-                                    </div>
-                                </div>
-							</div>
-                            <!--End Project-->
-                            <!--Project-->
-							<div class="single-feature">
-                                <div class="row project-holder">
-                                    <div class="col-lg-8 col-md-8 col-sm-6">
-                                        <a href=""><h3 class="project-name h2">Sci-Collab (Unsolvable Problems) bu there is no more tooomsfsr rthtedjrtysh srhrshwrtyhwr</h3></a>
-                                        <p class="project-tagline">Aggregating the world's unsolved problemAggregating the world's unsolved problemAggregating the world's unsolved problemAggregating the world's unsolved problemAggregating the world's unsolved problemAggregating the world's unsolved problemAggregating the world's unsolved problemAggregating the world's unsolved problemAggregating the world's unsolved problemAggregating the world's unsolved problemAggregating the world's unsolved problems</p>
-                                    </div>
-                                    <div class="col-lg-2 col-med-2 col-sm-3">
-                                        <div class="project-percentage fz-36">
-                                            <p>67%</p>
-                                        </div>
-                                    </div>
-								    <div class="col-lg-2 col-med-2 col-sm-3">
-                                        <img class="trophy" alt="winning project" src="img/trophy.png"/>
-                                    </div>
-                                </div>
-							</div>
-                            <!--End Project-->
+                                    </div>';
+                    }
+                    echo       '</div>
+                            </div>
+                            <!--End Project-->';
+        }
+    }
+
                             
-                            
+?>
                             
 						</div>
                         <!--End left column-->
