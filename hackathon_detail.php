@@ -4,6 +4,7 @@
     $sql = "SELECT * FROM hackathon WHERE hackathon_alias = '".$alias."'";
     $result = $conn->query($sql);
     if ($result->num_rows > 0) {
+        $row = $result->fetch_assoc();
         $hack_title = $row["title"];
         $hack_judge = $row["judges"];
         $start_date = $row["start_date"];
