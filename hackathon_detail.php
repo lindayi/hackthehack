@@ -1,7 +1,7 @@
 <?php
     include('config.php');
     $alias = $_GET["alias"];
-    $sql = "SELECT * FROM devpost WHERE hackathon_alias = ".$alias." ";
+    $sql = "SELECT * FROM devpost WHERE hackathon_alias = '".$alias."'";
     $result = $conn->query($sql);
     if ($result->num_rows > 0) {
         $hack_title = $row["title"];
