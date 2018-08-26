@@ -25,7 +25,7 @@
 		<!-- Favicon-->
 		<link rel="shortcut icon" href="img/hth-red-favicon.png">
 		<!-- Author Meta -->
-		<meta name="author" content="david-dayi">
+		<meta name="author" content="david & dayi">
 		<!-- Meta Description -->
 		<meta name="description" content="">
 		<!-- Meta Keyword -->
@@ -36,11 +36,11 @@
         <title><?php echo $hack_title;?> - Powered by Hack the Hack</title>
         
         <!-- More Meta Tags -->
-        <meta property="og:title" content="Hack the Hack">
+        <meta property="og:title" content="Hack the Hack: <?php echo $hack_title;?>">
         <meta property="og:type" content="website">
-        <meta property="og:description" content="Find out what kind of projects win hackathons hosted by Major League Hacking">
-        <meta property="og:image" content="http://dav-idcox.com/bikespace/icons/media_thumb1.jpg">
-        <meta property="og:url" content="http://dav-idcox.com">
+        <meta property="og:description" content="Discover what makes a winning hackathon project at <?php echo $hack_title;?>.">
+        <meta property="og:image" content="img/hth-icon-512.png">
+        <meta property="og:url" content="https://lindayi.me/projects/hack-the-hack">
         <meta name="twitter:card" content="summary_large_image">
         <meta property="og:site_name" content="Hack the Hack">
         <meta name="twitter:image:alt" content="Hack the Hack logo">
