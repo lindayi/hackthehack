@@ -3121,6 +3121,9 @@
 .red-theme {
     color: rgba(222,80,71,1);
 }
+.bold-num {
+    font-weight: 700;
+}
 .white-text {
     color: #fff;
 }
