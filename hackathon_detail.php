@@ -7,8 +7,8 @@
         $row = $result->fetch_assoc();
         $hack_title = $row["title"];
         $hack_judge = $row["judges"];
-        $start_date = $row["start_date"];
-        $end_date = $row["end_date"];
+        $start_date = date_create($row["start_date"]);
+        $end_date = date_create($row["end_date"]);
     } else {
         header("Location: ".$SITE_DOMAIN."index.php?alias=".$alias."&exist=false");
     }
