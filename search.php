@@ -1,7 +1,7 @@
 <?php
     include('config.php');
     $query = $_GET["query"];
-    $sql = "SELECT * FROM hackathon WHERE lower(title) like '%".$query."%';";
+    $sql = "SELECT * FROM hackathon WHERE lower(title) like '%".$query."%' ORDER BY start_date ASC;";
     $result = $conn->query($sql);
     $result_count = $result->num_rows;
 ?>
@@ -123,6 +123,15 @@
         while($row = $result->fetch_assoc()) {
             $start_date = date_create($row["start_date"]);
             $end_date = date_create($row["end_date"]);
+            $sql = "SELECT count(1) as pnum FROM project WHERE hackathon_alias = '".$row["hackathon_alias"]."';";
+            $pnumresult = $conn->query($sql);
+            $pnumrow = $pnumresult->fetch_assoc();
+            $pnum = $pnumrow["pnum"]
+            $sql = "SELECT count(1) as wnum FROM project WHERE winner = 1 AND hackathon_alias = '".$row["hackathon_alias"]."';";
+            $wnumresult = $conn->query($sql);
+            $wnumrow = $wnumresult->fetch_assoc();
+            $wnum = $wnumrow["wnum"]
+
             echo '
                             <!--Search result-->
 							<a href="hackathon_detail.php?alias='.$row["hackathon_alias"].'">
@@ -135,13 +144,13 @@
                                     <div class="col-lg-3 col-med-3 col-sm-3">
                                         <div class="hackathon-num-project fz-36">
                                             <h4><abbr title="number">#</abbr> of projects</h4>
-                                            <p>'.''.'</p>
+                                            <p>'.(string)$pnum.'</p>
                                         </div>
                                     </div>
 								    <div class="col-lg-3 col-med-3 col-sm-3">
                                         <div class="hackathon-num-winner fz-36">
                                             <h4><abbr title="number">#</abbr> of winners</h4>
-                                            <p>'.''.'</p>
+                                            <p>'.(string)$wnum.'</p>
                                         </div>
                                     </div>
                                 </div>
