@@ -115,6 +115,7 @@
     $result = $conn->query($sql);
     if ($result->num_rows > 0) {
         while($row = $result->fetch_assoc()) {
+                    if ($row["predict"] >= 0.5) {$colortag = "green-percent";} else {$colortag = "red-percent";}
                     echo   '<!--Project-->
                             <div class="single-feature">
                                 <div class="row project-holder">
@@ -122,7 +123,7 @@
                                         <a href="'.$row["project_url"].'"><h3 class="project-name h2">'.$row["title"].'</h3></a>
                                         <p class="project-tagline">'.$row["tagline"].'</p>
                                     </div>
-                                    <div class="col-lg-2 col-med-2 col-sm-3">
+                                    <div class="col-lg-2 col-med-2 col-sm-3 '.$colortag.'">
                                         <div class="project-percentage fz-36">
                                             <p>'.number_format($row["predict"] * 100).'%</p>
                                         </div>
