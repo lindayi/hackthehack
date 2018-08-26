@@ -21,9 +21,9 @@
         <!-- More Meta Tags -->
         <meta property="og:title" content="Hack the Hack">
         <meta property="og:type" content="website">
-        <meta property="og:description" content="Find out what kind of projects win hackathons hosted by Major League Hacking">
-        <meta property="og:image" content="http://dav-idcox.com/bikespace/icons/media_thumb1.jpg">
-        <meta property="og:url" content="http://dav-idcox.com">
+        <meta property="og:description" content="Discover what makes a winning hackathon project.">
+        <meta property="og:image" content="img/hth-icon-512.png">
+        <meta property="og:url" content="https://lindayi.me/projects/hack-the-hack">
         <meta name="twitter:card" content="summary_large_image">
         <meta property="og:site_name" content="Hack the Hack">
         <meta name="twitter:image:alt" content="Hack the Hack logo">
@@ -156,8 +156,7 @@
         
             <!--Other script files - including bootstrap-->
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-			<script src="js/vendor/bootstrap.min.js"></script>			
-			<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+			<script src="js/vendor/bootstrap.min.js"></script>
   			<script src="js/easing.min.js"></script>			
 			<script src="js/hoverIntent.js"></script>
 			<script src="js/superfish.min.js"></script>	
