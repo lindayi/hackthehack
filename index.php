@@ -8,7 +8,7 @@
 		<!-- Favicon-->
 		<link rel="shortcut icon" href="img/hth-red-favicon.png">
 		<!-- Author Meta -->
-		<meta name="author" content="david-dayi">
+		<meta name="author" content="david & dayi">
 		<!-- Meta Description -->
 		<meta name="description" content="">
 		<!-- Meta Keyword -->
