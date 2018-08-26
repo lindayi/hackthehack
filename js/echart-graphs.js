@@ -1,3 +1,60 @@
+//main page top tools
+var myChart = echarts.init(document.getElementById('bar-chart-1'));
+
+    var option = {
+        
+        color: 'rgba(59,172,240,1)',
+        tooltip: {
+            trigger: 'item',
+            position: 'inside',
+            formatter: '{c0}'
+        },
+        grid: {
+            show: false,
+            left: "30%",
+            right: "-5%",
+        },
+        xAxis: {
+            type: 'value',
+            splitLine: {
+                show: false,
+            },
+            boundaryGap: [0, 0.1],
+            axisLine: {
+                show: false,
+            },
+            axisTick: {
+                show:false,
+            },
+            axisLabel: {
+                show: false,
+            },
+        },
+        yAxis: {
+            axisLabel: {
+                margin: 10,
+                textStyle: {
+                    fontSize: 14,
+                }
+            },
+            axisTick: {
+                show:false,
+            },
+            axisLine: {
+                show: false,
+            },
+            inverse: true,
+            type: 'category',
+            data: [{value: 'Javascript', itemStyle: {color: '#000'},}, 'Python', 'HTML', 'CSS', 'Java', 'node.js', 'Android', 'HTML5', 'JQuery', 'CSS3'],
+        },
+        series: [{
+            data: [25862, 16523, 12751, 12620, 11647, 11199, 9394, 8859, 6011, 5015],
+            type: 'bar',
+        }],
+    };
+        // use configuration item and data specified to show chart
+myChart.setOption(option);
+
 var myChart = echarts.init(document.getElementById('bar-chart-2'));
 
     var option = {
@@ -111,60 +168,5 @@ var myChart = echarts.init(document.getElementById('bar-chart-3'));
     };
 myChart.setOption(option);
 
-//main page top tools
-var myChart = echarts.init(document.getElementById('bar-chart-1'));
 
-    var option = {
-        
-        color: 'rgba(59,172,240,1)',
-        tooltip: {
-            trigger: 'item',
-            position: 'inside',
-            formatter: '{c0}'
-        },
-        grid: {
-            show: false,
-            left: "30%",
-            right: "-5%",
-        },
-        xAxis: {
-            type: 'value',
-            splitLine: {
-                show: false,
-            },
-            boundaryGap: [0, 0.1],
-            axisLine: {
-                show: false,
-            },
-            axisTick: {
-                show:false,
-            },
-            axisLabel: {
-                show: false,
-            },
-        },
-        yAxis: {
-            axisLabel: {
-                margin: 10,
-                textStyle: {
-                    fontSize: 14,
-                }
-            },
-            axisTick: {
-                show:false,
-            },
-            axisLine: {
-                show: false,
-            },
-            inverse: true,
-            type: 'category',
-            data: [{value: 'Javascript', itemStyle: {color: '#000'},}, 'Python', 'HTML', 'CSS', 'Java', 'node.js', 'Android', 'HTML5', 'JQuery', 'CSS3'],
-        },
-        series: [{
-            data: [25862, 16523, 12751, 12620, 11647, 11199, 9394, 8859, 6011, 5015],
-            type: 'bar',
-        }],
-    };
-        // use configuration item and data specified to show chart
-myChart.setOption(option);
 

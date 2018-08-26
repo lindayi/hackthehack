@@ -130,6 +130,10 @@
                                     <p>0.68</p>
                                 </div>
                             </div>
+                            <div class="single-feature">
+								<h4 class="visual-stat">Top tools for winning projects</h4>
+								<div id="bar-chart-1" class="gchart-home"></div>
+							</div>
 						</div>
 						<div class="col-lg-4">
 							<div class="single-feature">
@@ -146,20 +150,7 @@
 					</div>
 				</div>
         </section>
-        <section class="feature-area pb-100" id="stats">
-           
-           
-           <div class="container">					
-					<div class="row mockup-container">
-						<div class="col-lg-4">
-							<div class="single-feature">
-								<h4 class="visual-stat">Top tools for winning projects</h4>
-								<div id="bar-chart-1" class="gchart-home"></div>
-							</div>
-						</div>											
-					</div>
-				</div>
-        </section>
+        
         
         
         <!--Footer-->
