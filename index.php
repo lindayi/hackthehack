@@ -22,12 +22,12 @@
         <meta property="og:title" content="Hack the Hack">
         <meta property="og:type" content="website">
         <meta property="og:description" content="Discover what makes a winning hackathon project.">
-        <meta property="og:image" content="img/hth-icon-512.png">
+        <meta property="og:image" content="https://lindayi.me/projects/hack-the-hack/img/hth-social-1200.jpg">
         <meta property="og:url" content="https://lindayi.me/projects/hack-the-hack">
         <meta name="twitter:card" content="summary_large_image">
         <meta property="og:site_name" content="Hack the Hack">
-        <meta property="og:image:width" content="512">
-        <meta property="og:image:height" content="512">
+        <meta property="og:image:width" content="1200">
+        <meta property="og:image:height" content="630">
         <meta name="twitter:image:alt" content="Hack the Hack logo">
         
         
