@@ -1,7 +1,7 @@
 <?php
     include('config.php');
     $query = $_GET["query"];
-    $sql = "SELECT * FROM hackathon WHERE MATCH (title) AGAINST ('".$alias."');";
+    $sql = "SELECT * FROM hackathon WHERE MATCH (title) AGAINST ('".$query."');";
     $result = $conn->query($sql);
     $result_count = $result->num_rows;
 ?>
