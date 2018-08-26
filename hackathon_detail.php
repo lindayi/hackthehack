@@ -109,7 +109,7 @@
 							</p>
 <?php
 
-    $sql = "SELECT * FROM project WHERE hackathon_alias = '".$alias."' ORDER BY win, predict DESC";
+    $sql = "SELECT * FROM project WHERE hackathon_alias = '".$alias."' ORDER BY winner DESC, predict DESC";
     $result = $conn->query($sql);
     if ($result->num_rows > 0) {
         while($row = $result->fetch_assoc()) {
