@@ -86,7 +86,7 @@
 					<div class="row fullscreen d-flex align-items-center justify-content-center">
 						<div class="banner-content col-lg-8">
                             <a href="https://hackthe6ix2018.devpost.com/"><h1 id="hackathon-name" class="text-white pb-30"><?php echo $hack_title;?></h1></a>
-                            <h2 id="hackathon-date" class="text-white h3"><?php echo $start_date->format('m ([ .\t-])* dd [,.stndrh\t ]+ y  hh [.:] MM space? meridian');?> — <?php echo $end_date->format('m ([ .\t-])* dd [,.stndrh\t ]+ y  hh [.:] MM space? meridian');?></h2>
+                            <h2 id="hackathon-date" class="text-white h3"><?php echo $start_date->format('F jS Y g:ia');?> — <?php echo $end_date->format('F jS Y g:ia');?></h2>
 							
                             </div>
 						</div>											
