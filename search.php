@@ -1,3 +1,11 @@
+<?php
+    include('config.php');
+    $query = $_GET["query"];
+    $sql = "SELECT * FROM hackathon WHERE MATCH (title) AGAINST ('".$alias."');";
+    $result = $conn->query($sql);
+    $result_count = $result->num_rows;
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -16,7 +24,7 @@
 		<!-- meta character set -->
 		<meta charset="UTF-8">
 		<!-- Site Title -->        
-        <title>Hack the Hack</title>
+        <title>Search for <?php echo $query;?> - Powered by Hack the Hack</title>
         
         <!-- More Meta Tags -->
         <meta property="og:title" content="Hack the Hack">
@@ -71,7 +79,7 @@
 					<div class="row fullscreen d-flex align-items-center justify-content-center">
 						<div class="banner-content col-lg-8">
 							<h1 class="text-white">
-								Search results			
+								<?php echo $result_count;?> Hackathons found	
 							</h1>
                             
                             <!-- Search bar -->
@@ -79,7 +87,7 @@
                                 <div class="col-md-12">
                                     <div id="custom-search-input">
                                         <div class="input-group col-md-12">
-                                            <input id="main-search-box" type="text" class="form-control input-lg" placeholder="Search for hackathons" value="hack the 6ix" />
+                                            <input id="main-search-box" type="text" class="form-control input-lg" placeholder="Search for hackathons" value="<?php echo $query ?>" />
                                             <a id="main-search-button" class="search-icon" href="hack-the-6ix.html"></a>
                                         </div>
                                     </div>
