@@ -3136,8 +3136,14 @@
 .banner-area .hth
 {
 /*  background-color:rgba(59,172,240,0.9);*/
-background-color:rgba(192,55,36,0.9);
+background-color:#c03724ee;
 /*    background-color: #FF824Cdd;*/
+}
+.green-percent {
+    background-color: #03958f;
+}
+.red-percent {
+    background-color: #c03724;
 }
 .hack-logo {
     max-height:100px;
@@ -3176,12 +3182,6 @@ background-color:rgba(192,55,36,0.9);
     border-radius: 60px;
     width: 100px;
     height: 100px;
-}
-.green-percent {
-    background-color: mediumseagreen;
-}
-.red-percent {
-    background-color: rgba(222,80,71,1);
 }
 .project-percentage p {
     padding-top: 38px;
@@ -3242,3 +3242,24 @@ background-color:rgba(192,55,36,0.9);
 
 /*----------------END Hackathon search results-------------*/
 /*---------------------------------------------------------*/
+
+
+/*------------------Stats visualizations---------------*/
+/*-----------------------------------------------------*/
+
+.stat-single-num h3 {
+    padding-top: 10px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.stat-single-num h4 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.stat-single-num p {
+    text-align: center;
+}
+
+/*----------------END Stats visualizations-------------*/
+/*-----------------------------------------------------*/
