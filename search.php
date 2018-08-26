@@ -86,10 +86,10 @@
                             <div class="row d-flex justify-content-center">
                                 <div class="col-md-12">
                                     <div id="custom-search-input">
-                                        <div class="input-group col-md-12">
-                                            <form action="search.php" method="get">
+                                        <div>
+                                            <form class="input-group col-md-12" action="search.php" method="get">
                                                 <input id="main-search-box" name="query" type="text" class="form-control input-lg" placeholder="Search for hackathons" value="<?php echo $query ?>" />
-                                                <a id="main-search-button" class="search-icon" onclick="$(this).closest('form').submit()"></a>
+                                                <a id="main-search-button" class="search-icon" onclick="$(this).closest('form').submit()" ></a>
                                             </form>
                                         </div>
                                     </div>
