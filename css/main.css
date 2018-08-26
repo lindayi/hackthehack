@@ -461,6 +461,10 @@
 {
 	padding-bottom:0px
 }
+.pb-5
+{
+	padding-bottom:5px;
+}
 .pb-10
 {
 	padding-bottom:10px
@@ -520,6 +524,10 @@
 .pr-30
 {
 	padding-right:30px
+}
+.pl-20
+{
+	padding-left:20px
 }
 .pl-30
 {
@@ -2965,11 +2973,11 @@
 }
 .footer-text
 {
-	padding-top:20px
+	padding-top:0px
 }
 .footer-text a,.footer-text i
 {
-	color:#3bacf0
+	color:#3bacf0;
 }
 .whole-wrap
 {
@@ -3140,36 +3148,45 @@ background-color:rgba(192,55,36,0.9);
     padding-top: 10px;
     padding-bottom: 10px;
 }
-
 .project-name {
     margin-top: 0px;
     color: #0544bb;
     padding-bottom: 10px;
     
 }
-
 .project-tagline {
     padding-bottom: 0px;
     margin-bottom: 0px;
 }
-
 .project-percentage {
     background-color: #bbb;
     border-radius: 60px;
     width: 100px;
     height: 100px;
 }
-
 .project-percentage p {
     padding-top: 38px;
     text-align: center;
     font-weight: 600;
 }
-
 .trophy {
     width: 90px;
     padding-top: 5px;
 }
-
 /*-----------------------END Project cards---------------------*/
 /*-------------------------------------------------------------*/
+
+
+/*-----------------------Judge names-----------------------*/
+/*---------------------------------------------------------*/
+.judge-name {
+    padding-left: 8px;
+    width: 70%;
+    line-height: 24px;
+    border-top: solid 4px #ddd;
+}
+.judge-affiliation {
+    padding-left: 16px;
+}
+/*-----------------------END Judge names---------------------*/
+/*-----------------------------------------------------------*/
