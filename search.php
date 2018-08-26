@@ -1,7 +1,7 @@
 <?php
     include('config.php');
     $query = $_GET["query"];
-    $sql = "SELECT * FROM hackathon WHERE lower(title) like '%".$query."%' ORDER BY start_date ASC;";
+    $sql = "SELECT * FROM hackathon WHERE lower(title) like '%".$query."%' ORDER BY date(start_date) DESC LIMIT 0, 100;";
     $result = $conn->query($sql);
     $result_count = $result->num_rows;
 ?>
