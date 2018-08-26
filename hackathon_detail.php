@@ -105,7 +105,7 @@
                         <!--Left column-->
 						<div class="col-lg-8 col-md-8 col-sm-12">
                             <p class="pt-0 pl-20 fz-24 text-white">
-								Projects that are most likely to win:
+								Projects at this hackathon:
 							</p>
                             <!--Project-->
 							<div class="single-feature">
@@ -160,7 +160,10 @@
                                         foreach ($hack_judge as $judge) {
                                             $name = key($judge);
                                             $affi = $judge[$name];
-                                            echo '<li><p class="judge-name h5 pb-10 pt-20">'.$name.'</p><p class="judge-affiliation pb-0">'.$affi.'</p></li>';
+                                            echo '<li>
+                                            <p class="judge-name h5 pb-10 pt-20">'.$name.'</p>
+                                            <p class="judge-affiliation pb-0">'.$affi.'</p>
+                                            </li>';
                                         }
                                     ?>
                                 </ul>
