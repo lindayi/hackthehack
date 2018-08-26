@@ -72,9 +72,9 @@
 							<h1 class="text-white">
 								Hack the Hack			
 							</h1>
-							<p class="pt-20 pb-20 fz-24 text-white">
+							<p class="pt-20 pb-10 fz-24 text-white">
                                 Discover what makes a winning hackathon project.</p>
-                            <p class="pt-0 pb-0 fz-20 text-white">Mining <span>97,933</span> Devpost submissions and counting...
+                            <p class="pt-0 pb-10 fz-18 text-white">Mining <span>97,933</span> Devpost submissions and counting...
 							</p>
                             
                       <!-- Search bar -->      
