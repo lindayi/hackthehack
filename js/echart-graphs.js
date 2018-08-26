@@ -1,5 +1,5 @@
 //main page top tools
-var myChart = echarts.init(document.getElementById('bar-chart-1'));
+var myChart1 = echarts.init(document.getElementById('bar-chart-1'));
 
     var option = {
         
@@ -53,9 +53,9 @@ var myChart = echarts.init(document.getElementById('bar-chart-1'));
         }],
     };
         // use configuration item and data specified to show chart
-myChart.setOption(option);
+myChart1.setOption(option);
 
-var myChart = echarts.init(document.getElementById('bar-chart-2'));
+var myChart2 = echarts.init(document.getElementById('bar-chart-2'));
 
     var option = {
         
@@ -111,9 +111,9 @@ var myChart = echarts.init(document.getElementById('bar-chart-2'));
 
 
         // use configuration item and data specified to show chart
-myChart.setOption(option);
+myChart2.setOption(option);
 
-var myChart = echarts.init(document.getElementById('bar-chart-3'));
+var myChart3 = echarts.init(document.getElementById('bar-chart-3'));
 
     var option = {
         
@@ -166,29 +166,12 @@ var myChart = echarts.init(document.getElementById('bar-chart-3'));
             type: 'bar',
         }],
     };
-/*app: 6805
-game: 4343
-data: 2756
-web: 2197
-platform: 1969
-simple: 1796
-social: 1520
-learning: 1451
-students: 1429
-mobile: 1421*/
 
-//data: [{value: 'Tim Lytle', itemStyle: {color: '#000'},}, 'Joe Nash', 'Minerva Tantoco', 'Gregor Engelmann', 'Remko de Knikker', 'Tim Tregubov', 'Tim Fogarty', 'Sam Machin', 'Ryan Hill', 'Pierre Gauthier'],
-//        },
-//        series: [{
-//            data: [10, 9, 8, 8, 7, 6, 6, 6, 6, 6],
-//            type: 'bar',
-
-        // use configuration item and data specified to show chart
-myChart.setOption(option);
+myChart3.setOption(option);
 
 
-var myChart = echarts.init(document.getElementById('double-bar-1'));
-option = {
+var myChart4 = echarts.init(document.getElementById('double-bar-1'));
+var option = {
     tooltip: {
         trigger: 'axis',
         axisPointer: {
@@ -225,4 +208,4 @@ option = {
         }
     ]
 };
-myChart.setOption(option);
+myChart4.setOption(option);
