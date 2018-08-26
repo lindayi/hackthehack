@@ -139,7 +139,7 @@
                                 <div class="row project-holder">
                                     <div class="col-lg-6 col-md-6 col-sm-6">
                                         <h3 class="hackathon-name h2">'.$row["title"].'</h3>
-                                        <p>'.$start_date->format('F jS Y g:ia').' — '.$end_date->format('F jS Y g:ia').'</p>
+                                        <p>'.$start_date->format('M jS Y').' — '.$end_date->format('M jS Y').'</p>
                                     </div>
                                     <div class="col-lg-3 col-med-3 col-sm-3">
                                         <div class="hackathon-num-project fz-36">
