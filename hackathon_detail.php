@@ -160,21 +160,9 @@
                                         foreach ($hack_judge as $judge) {
                                             $name = key($judge);
                                             $affi = $judge[$name];
-                                            echo '<li><p class="judge-name h5 pb-10 pt-20">'.$name.'</p><p class="judge-affiliation pb-0">'.$affi.'</p></li>';
+                                            echo '<li><p class="judge-name h5 pb-10 pt-20">'.$name.'</p><p class="judge-affiliation pb-0">'.$affi.'</p></li>\n';
                                         }
                                     ?>
-                                    <li>
-                                        <p class="judge-name h5 pb-10 pt-20">Jacob Lee</p>
-                                        <p class="judge-affiliation pb-0">Stdlib - Co-Founder</p>
-                                    </li>
-                                    <li>
-                                        <p class="judge-name h5 pb-10 pt-20">Deborah Washburn</p>
-                                        <p class="judge-affiliation pb-0">Digital Boundary Group - Director, External Security Services</p>
-                                    </li>
-                                    <li>
-                                        <p class="judge-name h5 pb-10 pt-20">Gabrielle Singh Cadieux Cordolosa III Jr.</p>
-                                        <p class="judge-affiliation pb-0">Deloitte Digital - Business Technology Analyst</p>
-                                    </li>
                                 </ul>
                                 
 								
