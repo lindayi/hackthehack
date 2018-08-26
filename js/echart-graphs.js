@@ -113,6 +113,49 @@ var myChart = echarts.init(document.getElementById('bar-chart-2'));
         // use configuration item and data specified to show chart
 myChart.setOption(option);
 
+
+var myChart = echarts.init(document.getElementById('bar-chart-4'));
+
+var option = {
+    tooltip: {
+        trigger: 'axis',
+        axisPointer: {
+            type: 'shadow'
+        }
+    },
+    legend: {
+        data: ['Winners', 'Others']
+    },
+    grid: {
+        left: '3%',
+        right: '4%',
+        bottom: '3%',
+        containLabel: true
+    },
+    xAxis: {
+        type: 'value',
+        boundaryGap: [0, 0.01]
+    },
+    yAxis: {
+        type: 'category',
+        data: ['1 teammate','2 teammates','3 teammates','4 teammates','> 4 teammates']
+    },
+    series: [
+        {
+            name: 'Winners',
+            type: 'bar',
+            data: [0.24, 0.18, 0.21, 0.28, 0.10]
+        },
+        {
+            name: 'Others',
+            type: 'bar',
+            data: [0.45, 0.18, 0.16, 0.15, 0.05]
+        }
+    ]
+};
+
+myChart.setOption(option);
+
 var myChart = echarts.init(document.getElementById('bar-chart-3'));
 
     var option = {
@@ -167,6 +210,4 @@ var myChart = echarts.init(document.getElementById('bar-chart-3'));
         }],
     };
 myChart.setOption(option);
-
-
 

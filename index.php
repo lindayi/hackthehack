@@ -131,7 +131,7 @@
                                 </div>
                             </div>
                             <div class="single-feature">
-								<h4 class="visual-stat">Top tools for winning projects</h4>
+								<h4 class="visual-stat">Most popular tools across all projects</h4>
 								<div id="bar-chart-1" class="gchart-home"></div>
 							</div>
 						</div>
@@ -139,6 +139,10 @@
 							<div class="single-feature">
 								<h4 class="visual-stat">Top tools for winning projects</h4>
 								<div id="bar-chart-2" class="gchart-home"></div>
+							</div>
+                            <div class="single-feature">
+								<h4 class="visual-stat">Project group size compared to wins</h4>
+								<div id="bar-chart-4" class="gchart-home"></div>
 							</div>
 						</div>
 						<div class="col-lg-4">
