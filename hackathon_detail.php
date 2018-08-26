@@ -66,13 +66,13 @@
 			 <div class="container">
 			     <div class="row align-items-center justify-content-between d-flex">
                      <div id="logo">
-                         <a href="index.html"><img src="img/hack-logo-2.png" alt="" title="" /></a>
+                         <a href="index.php"><img src="img/hack-logo-2.png" alt="" title="" /></a>
                      </div>
                      <nav id="nav-menu-container">
                          <ul class="nav-menu">
-                             <li class="menu-active"><a href="index.html">Home</a></li>
-                             <li><a href="index.html#stats">Stats</a></li>
-                             <li><a href="#feature">Hackathons</a></li>
+                             <li class="menu-active"><a href="index.php">Home</a></li>
+                             <li><a href="index.php#stats">Stats</a></li>
+                             <li><a href="search.php">Hackathons</a></li>
                          </ul>
                      </nav><!-- #nav-menu-container -->
                  </div>
