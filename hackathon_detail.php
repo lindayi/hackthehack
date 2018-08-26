@@ -124,7 +124,7 @@
                                         <p class="project-tagline">'.$row["tagline"].'</p>
                                     </div>
                                     <div class="col-lg-2 col-med-2 col-sm-3">
-                                        <div class="project-percentage fz-36 '.$colortag.'">
+                                        <div class="project-percentage fz-36 text-white '.$colortag.'">
                                             <p>'.number_format($row["predict"] * 100).'%</p>
                                         </div>
                                     </div>';
