@@ -123,9 +123,7 @@ var option = {
             type: 'shadow'
         }
     },
-    legend: {
-        data: ['Winners', 'Others']
-    },
+    
     grid: {
         left: '3%',
         right: '4%',
