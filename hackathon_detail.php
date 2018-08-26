@@ -86,7 +86,7 @@
 				<div class="container">
 					<div class="row fullscreen d-flex align-items-center justify-content-center">
 						<div class="banner-content col-lg-8">
-                            <a href="https://hackthe6ix2018.devpost.com/"><h1 id="hackathon-name" class="text-white pb-30"><?php echo $hack_title;?></h1></a>
+                            <a href="https://<?php echo $alias?>.devpost.com/"><h1 id="hackathon-name" class="text-white pb-30"><?php echo $hack_title;?></h1></a>
                             <h2 id="hackathon-date" class="text-white h3"><?php echo $start_date->format('F jS Y g:ia');?> — <?php echo $end_date->format('F jS Y g:ia');?></h2>
 							
                             </div>
@@ -117,7 +117,7 @@
                             <div class="single-feature">
                                 <div class="row project-holder">
                                     <div class="col-lg-8 col-md-8 col-sm-6">
-                                        <h3 class="project-name h2">'.$row["title"].'</h3>
+                                        <a href="'.$row["project_url"].'"><h3 class="project-name h2">'.$row["title"].'</h3></a>
                                         <p class="project-tagline">'.$row["tagline"].'</p>
                                     </div>
                                     <div class="col-lg-2 col-med-2 col-sm-3">
