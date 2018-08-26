@@ -147,7 +147,7 @@
 						</div>
 						<div class="col-lg-4">
 							<div class="single-feature">
-								<h4 class="visual-stat">Top project keywords</h4>
+								<h4 class="visual-stat pb-30">Top project keywords</h4>
 								<div id="bar-chart-3" class="gchart-home"></div>
 							</div>
 						</div>												
