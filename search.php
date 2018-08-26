@@ -1,7 +1,7 @@
 <?php
     include('config.php');
     $query = $_GET["query"];
-    $sql = "SELECT * FROM hackathon WHERE MATCH (title) AGAINST ('".$query."');";
+    $sql = "SELECT * FROM hackathon WHERE lower(title) like '%".$query."%';";
     $result = $conn->query($sql);
     $result_count = $result->num_rows;
 ?>
@@ -113,80 +113,42 @@
 							<!--Centre column-->
 						<div class="col-lg-8 col-md-8 col-sm-12">
                             
-                            <p class="pt-0 pl-20 fz-24 text-white">
-								Hackathons on Devpost:
-							</p>
+
                             
+<?php
+    if ($result->num_rows > 0) {
+        echo '                            <p class="pt-0 pl-20 fz-24 text-white">
+                                Hackathons on Devpost:
+                            </p>';
+        while($row = $result->fetch_assoc()) {
+            echo '
                             <!--Search result-->
-							<a href="hack-the-6ix.html">
+							<a href="https://'.$row["hackathon_alias"].'.devpost.com/">
                             <div class="search-result single-feature">
                                 <div class="row project-holder">
                                     <div class="col-lg-6 col-md-6 col-sm-6">
-                                        <h3 class="hackathon-name h2">Hack the 6ix</h3>
+                                        <h3 class="hackathon-name h2">'.$row["title"].'</h3>
                                     </div>
                                     <div class="col-lg-3 col-med-3 col-sm-3">
                                         <div class="hackathon-num-project fz-36">
                                             <h4><abbr title="number">#</abbr> of projects</h4>
-                                            <p>37</p>
+                                            <p>'.''.'</p>
                                         </div>
                                     </div>
 								    <div class="col-lg-3 col-med-3 col-sm-3">
                                         <div class="hackathon-num-winner fz-36">
                                             <h4><abbr title="number">#</abbr> of winners</h4>
-                                            <p>4</p>
+                                            <p>'.''.'</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
 							</a>
-                            <!--End Search Result-->
+                            <!--End Search Result-->';
+        }
+    }
+?>
                             
-                            <!--Search result-->
-							<a href="hack-the-6ix.html">
-                            <div class="search-result single-feature">
-                                <div class="row project-holder">
-                                    <div class="col-lg-6 col-md-6 col-sm-6">
-                                        <h3 class="hackathon-name h2">Hack the 6ix</h3>
-                                    </div>
-                                    <div class="col-lg-3 col-med-3 col-sm-3">
-                                        <div class="hackathon-num-project fz-36">
-                                            <h4><abbr title="number">#</abbr> of projects</h4>
-                                            <p>37</p>
-                                        </div>
-                                    </div>
-								    <div class="col-lg-3 col-med-3 col-sm-3">
-                                        <div class="hackathon-num-winner fz-36">
-                                            <h4><abbr title="number">#</abbr> of winners</h4>
-                                            <p>4</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-							</a>
-                            <!--End Search Result-->
-                            <!--Search result-->
-							<a href="hack-the-6ix.html">
-                            <div class="search-result single-feature">
-                                <div class="row project-holder">
-                                    <div class="col-lg-6 col-md-6 col-sm-6">
-                                        <h3 class="hackathon-name h2">Hack the 6ix</h3>
-                                    </div>
-                                    <div class="col-lg-3 col-med-3 col-sm-3">
-                                        <div class="hackathon-num-project fz-36">
-                                            <h4><abbr title="number">#</abbr> of projects</h4>
-                                            <p>37</p>
-                                        </div>
-                                    </div>
-								    <div class="col-lg-3 col-med-3 col-sm-3">
-                                        <div class="hackathon-num-winner fz-36">
-                                            <h4><abbr title="number">#</abbr> of winners</h4>
-                                            <p>4</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-							</a>
-                            <!--End Search Result-->
                             
                         </div>					
 					</div>
